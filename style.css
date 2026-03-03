@@ -75,7 +75,9 @@ details[open] summary::after {
 
 @media (max-width: 320px) {
     .content {
-    max-width: 200px;
+    max-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1 {
