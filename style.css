@@ -75,9 +75,9 @@ details[open] summary::after {
 
 @media (max-width: 320px) {
     .content {
-    max-width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
+    max-width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h1 {
@@ -88,13 +88,13 @@ h1 {
 details {
     
     font-size: 14px;
-    max-width: 200px;
+    max-width: 280px;
     
 }
 img{
     margin-top: 10px;
     margin-bottom: 10px;
-    max-width: 200px;
+    max-width: 280px;
     
 }
 
