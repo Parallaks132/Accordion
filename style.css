@@ -10,17 +10,11 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 10vh;
     height: 100vh;
     font-family: Chiron GoRound TC;
     background-color: #323F4B;
     color: #F59800;
-}
-
-.content {
-    max-width: 500px;
 }
 
 h1 {
@@ -76,14 +70,10 @@ details[open] summary::after {
 }
 
 @media (max-width: 320px) {
-    .content {
-    max-width: 280px;
+.text{
+    padding-left: 20;
+    padding-right: 20;
 }
-body {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 h1 {
     font-size: 25px;
     margin-bottom: 10px;
