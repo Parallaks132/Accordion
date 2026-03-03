@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Funnel+Display:wght@300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Chiron GoRound TC;
+    background-color: #323F4B;
+    color: #F59800;
+}
+
+.content {
+    width: 500px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+details {
+    
+    font-size: 20px;
+    color: #f9d59b;
+    max-width: 500px;
+    
+}
+
+summary{
+    font-size: 30px;
+    line-height: 150%;
+    color: #F59800;
+    padding: 10px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+summary::marker{
+    content: '';
+}
+summary::after{
+    content: '+';
+    transition: transform 200ms ease;
+}
+details[open] summary::after {
+    transform: rotate(45deg);
+}
+::details-content{
+    transition: height 0.5s ease, content-visibility 0.5s ease allow-discrete;
+    height: 0;
+    overflow: clip;
+}
+
+:root{
+    interpolate-size:allow-keywords;
+}
+[open]::details-content {
+    height: auto;
+}
