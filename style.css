@@ -74,15 +74,18 @@ details[open] summary::after {
 }
 
 @media (max-width: 320px) {
+    .content {
+    max-width: 200px;
+}
 
 h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 details {
     
-    font-size: 16px;
+    font-size: 14px;
     max-width: 200px;
     
 }
@@ -94,7 +97,7 @@ img{
 }
 
 summary{
-    font-size: 22px;
+    font-size: 20px;
 }
 }
 
