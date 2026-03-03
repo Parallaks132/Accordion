@@ -5,11 +5,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
+    overflow-y: scroll;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-top: 10vh;
     height: 100vh;
     font-family: Chiron GoRound TC;
     background-color: #323F4B;
@@ -17,7 +18,7 @@ body {
 }
 
 .content {
-    width: 500px;
+    max-width: 500px;
 }
 
 h1 {
@@ -30,6 +31,12 @@ details {
     font-size: 20px;
     color: #f9d59b;
     max-width: 500px;
+    
+}
+img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 300px;
     
 }
 
@@ -65,3 +72,4 @@ details[open] summary::after {
 [open]::details-content {
     height: auto;
 }
+
