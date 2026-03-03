@@ -71,8 +71,8 @@ details[open] summary::after {
 
 @media (max-width: 320px) {
 .text{
-    padding-left: 20;
-    padding-right: 20;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 h1 {
     font-size: 25px;
