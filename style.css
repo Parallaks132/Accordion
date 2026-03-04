@@ -43,10 +43,15 @@ summary{
     line-height: 150%;
     color: #F59800;
     padding: 10px 0;
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: default;
+    pointer-events: none;
+}
+summary text{
+    pointer-events: auto;
+    cursor: pointer;
 }
 summary::marker{
     content: '';
@@ -54,14 +59,17 @@ summary::marker{
 summary::after{
     content: '+';
     transition: transform 200ms ease;
+    pointer-events: auto;
+    cursor: pointer;
 }
 details[open] summary::after {
     transform: rotate(45deg);
+    color: #ef610f;
 }
 ::details-content{
     transition: height 0.5s ease, content-visibility 0.5s ease allow-discrete;
     height: 0;
-    overflow: clip;
+    overflow: clip;   
 }
 
 :root{
@@ -70,6 +78,31 @@ details[open] summary::after {
 [open]::details-content {
     height: auto;
 }
+
+summary text:hover{
+    color: #f9c570;
+}
+img:active {
+    transform: scale(0.98); 
+    transition: transform 0.1s ease;
+}
+summary text:active{
+    transform: scale(0.95); 
+    transition: transform 0.1s ease;
+}
+
+details:not([open]):hover summary::after{
+     
+     transform: scale(1.5); 
+     transition: transform 1s ease;
+     
+}
+
+details[open] summary text{
+    color: #fff7ea;
+}
+
+
 
 @media (max-width: 480px) {
 .text{
@@ -123,3 +156,5 @@ summary{
     font-size: 28px;
 }
 }
+
+
