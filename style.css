@@ -71,7 +71,7 @@ details[open] summary::after {
     height: auto;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
 .text{
     margin-left: 20px;
     margin-right: 20px;
