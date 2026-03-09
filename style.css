@@ -80,9 +80,6 @@ details[open] summary::after {
     height: auto;
 }
 
-summary text:hover{
-    color: #f9c570;
-}
 img:active {
     transform: scale(0.98); 
     transition: transform 0.1s ease;
@@ -92,18 +89,12 @@ summary text:active{
     transition: transform 0.1s ease;
 }
 
-details:not([open]):hover summary::after{
-     
-     transform: scale(1.5); 
-     transition: transform 1s ease;
-     
-}
-
 details[open] summary text{
     color: #fff7ea;
 }
 
-#fact
+@media (hover: hover) {
+  #fact
   {
     display: none;
 }
@@ -113,6 +104,18 @@ details:not([open]) summary:hover #fact
     flex-basis: 100%; 
     margin-top: 10px;  
     order: 2;
+}
+
+details:not([open]):hover summary::after{
+     
+     transform: scale(1.5); 
+     transition: transform 1s ease;
+     
+}
+
+summary text:hover{
+    color: #f9c570;
+}
 }
 
 @media (max-width: 480px) {
