@@ -93,11 +93,12 @@ details[open] summary text{
     color: #fff7ea;
 }
 
-@media (hover: hover) {
-  #fact
+#fact
   {
     display: none;
 }
+@media (hover: hover) {
+  
 details:not([open]) summary:hover #fact
   {
     display: block;
