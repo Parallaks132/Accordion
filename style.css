@@ -8,8 +8,8 @@
 body {
     overflow-y: scroll;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
+    align-items: flex-start;
     padding-top: 10vh;
     height: 100vh;
     font-family: Chiron GoRound TC;
@@ -48,6 +48,7 @@ summary{
     align-items: center;
     cursor: default;
     pointer-events: none;
+    flex-wrap: wrap;
 }
 summary text{
     pointer-events: auto;
@@ -102,7 +103,17 @@ details[open] summary text{
     color: #fff7ea;
 }
 
-
+#fact
+  {
+    display: none;
+}
+details:not([open]) summary:hover #fact
+  {
+    display: block;
+    flex-basis: 100%; 
+    margin-top: 10px;  
+    order: 2;
+}
 
 @media (max-width: 480px) {
 .Text1{
